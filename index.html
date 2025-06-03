@@ -27,9 +27,33 @@
       letter-spacing: 3px;
     }
 
+    .rotating-image-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .rotating-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      animation: spin 10s linear infinite;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
     main {
       max-width: 700px;
-      margin: 3rem auto;
+      margin: 2rem auto;
       background-color: rgba(0, 0, 0, 0.6);
       padding: 2rem;
       border-radius: 15px;
@@ -86,8 +110,13 @@
     The
   </header>
 
+  <div class="rotating-image-container">
+    <img src="https://files.catbox.moe/9hhbs8.jpg" alt="Rotating Logo" class="rotating-image">
+  </div>
+
   <main>
-    <h2>LikoDios Music</h2>
+    <h2>ARCHIP ROMEO 
+BEST SONGS</h2>
     <div class="playlist">
       <div class="track">
         <h3>1. Shasha</h3>
@@ -145,4 +174,4 @@
   </footer>
 
 </body>
-      </html>
+</html>
